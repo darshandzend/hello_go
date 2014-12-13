@@ -16,7 +16,7 @@ func (r rect) perim() int {
 
 func main() {
 	r := rect{240, 360}
-	
+
 	fmt.Println("area:", r.area())
 	fmt.Println("perim:", r.perim())
 

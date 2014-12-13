@@ -16,7 +16,7 @@ func main() {
 	fmt.Println(nextInt())
 	fmt.Println(nextInt())
 	fmt.Println(nextInt())
-	
+
 	reinit := incrementor()
 
 	fmt.Println(reinit())

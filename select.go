@@ -4,7 +4,7 @@ import "fmt"
 import "time"
 
 func main() {
-	
+
 	ch1 := make(chan string, 1)
 	ch2 := make(chan string, 2)
 
@@ -27,5 +27,3 @@ func main() {
 		}
 	}
 }
-
-	

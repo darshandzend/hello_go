@@ -9,7 +9,7 @@ func f(input string) {
 }
 
 func main() {
-	
+
 	//Normal call
 	f("direct")
 

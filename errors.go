@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"errors"
+	"fmt"
 )
 
 func f1(arg int) (int, error) {
-	
+
 	if arg == 13 {
 		return -1, errors.New("Go away, Satan!")
 	}
@@ -15,7 +15,7 @@ func f1(arg int) (int, error) {
 }
 
 type argError struct {
-	arg int
+	arg  int
 	prob string
 }
 
@@ -24,8 +24,8 @@ func (e *argError) Error() string {
 }
 
 func f2(arg int) (int, error) {
-	
-	if(arg == 13) {
+
+	if arg == 13 {
 		return -1, &argError{arg, "Go away, Satan!"}
 	}
 
@@ -33,7 +33,7 @@ func f2(arg int) (int, error) {
 }
 
 func main() {
-	
+
 	for _, i := range []int{13, 42} {
 		if r, e := f1(i); e != nil {
 			fmt.Println("f1 failed:", e)
@@ -56,11 +56,3 @@ func main() {
 		fmt.Println(ae.prob)
 	}
 }
-
-
-
-
-
-
-
-

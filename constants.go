@@ -8,7 +8,7 @@ import (
 const s string = "constant"
 
 func main() {
-	
+
 	fmt.Println(s)
 
 	const i = 40983483

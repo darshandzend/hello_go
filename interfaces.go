@@ -9,11 +9,11 @@ type geometry interface {
 }
 
 type square struct {
-	width, height float64 
+	width, height float64
 }
 
 type circle struct {
-	radius float64 
+	radius float64
 }
 
 func (s square) area() float64 {

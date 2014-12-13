@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	
+
 	m := make(map[string]int)
 
 	m["k1"] = 1
@@ -17,9 +17,9 @@ func main() {
 	delete(m, "k2")
 	fmt.Println("del: ", m)
 
-	_,present := m["k2"]
+	_, present := m["k2"]
 	fmt.Println("prs: ", present)
 
-	n := map[string]int{"one" : 1, "two" : 2}
+	n := map[string]int{"one": 1, "two": 2}
 	fmt.Println("dec: ", n)
 }

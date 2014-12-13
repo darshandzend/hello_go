@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	
+
 	var a string = "initial"
 	fmt.Println(a)
 
