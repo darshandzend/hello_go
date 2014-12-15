@@ -24,6 +24,8 @@ func main() {
 			fmt.Println("recieved:", msg1)
 		case msg2 := <-ch2:
 			fmt.Println("recieved:", msg2)
+		//default:
+		//	fmt.Println("Nothing recieved yet")
 		}
 	}
 }
