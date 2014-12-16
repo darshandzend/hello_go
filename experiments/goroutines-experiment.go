@@ -3,7 +3,7 @@
 executing goroutine has blocked e.g. on Sleep or a channne-
 l.
 
-The following program will never have predicted output unless
+The following program will ALWAYS have a predicted output unless
 GOMAXPROCS is manually set.
 */
 
