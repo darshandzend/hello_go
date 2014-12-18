@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	
+
 	timer1 := time.NewTimer(time.Second * 2)
 
 	<-timer1.C

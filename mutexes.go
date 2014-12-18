@@ -2,22 +2,21 @@ package main
 
 import (
 	"fmt"
-	"sync"
-	"sync/atomic"
 	"math/rand"
 	"runtime"
+	"sync"
+	"sync/atomic"
 	"time"
 )
 
 func main() {
-	
+
 	state := make(map[int]int)
 
 	var ops int64 = 0
 
 	var mutex = &sync.Mutex{}
 
-	
 	//create 50 concurrent readers
 	for i := 0; i < 50; i++ {
 		go func() {
@@ -33,7 +32,6 @@ func main() {
 			}
 		}()
 	}
-
 
 	//create 10 concurrent writers
 	for j := 0; j < 10; j++ {
@@ -57,6 +55,6 @@ func main() {
 	fmt.Println("ops:", opsFinal)
 
 	mutex.Lock()
-	fmt.Println("state:",state)
+	fmt.Println("state:", state)
 	mutex.Unlock()
 }

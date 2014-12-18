@@ -9,7 +9,7 @@ func worker(id int, jobs <-chan int, results chan<- int) {
 	for j := range jobs {
 		time.Sleep(time.Second)
 		fmt.Println("Worker", id, "recieved job", j)
-		results<- j * 2
+		results <- j * 2
 	}
 }
 
@@ -22,7 +22,7 @@ func main() {
 	}
 
 	for i := 1; i <= 9; i++ {
-		jobs<- i
+		jobs <- i
 	}
 	close(jobs)
 

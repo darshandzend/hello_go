@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	
+
 	ticker := time.NewTicker(time.Millisecond * 500)
 
 	go func() {
