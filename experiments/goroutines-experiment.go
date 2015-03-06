@@ -20,7 +20,7 @@ func routine(id int) {
 	/* this will explicitely yield the running goroutine.
 	switch the comment below to understand more */
 
-	//runtime.Gosched()
+	runtime.Gosched()
 	for i := 0; i < 5; i++ {
 		fmt.Println("Goroutine", id, "Loop", i)
 	}
